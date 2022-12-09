@@ -1,21 +1,27 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Index from "./pages/Index";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import OurWork from "./components/OurWork";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import OurWork from "./pages/OurWork";
+import TopBar from "./components/TopBar";
+import Footer from "./components/Footer";
+
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" exact element={<Index page={<Home/>} />} />
-        <Route path="/about" exact element={<Index page={<About/>} />} />
-        <Route path="/services" exact element={<Index page={<OurWork/>} />} />
-        <Route path="/contact" exact element={<Index page={<Contact/>} />} />
-      </Routes>
-    </Router>
+    <>
+      <TopBar />
+      <Router>
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/about" exact element={<About />} />
+          <Route path="/services" exact element={<OurWork />} />
+          <Route path="/contact" exact element={<Contact />} />
+        </Routes>
+      </Router>
+      <Footer />
+    </>
   );
 }
 
