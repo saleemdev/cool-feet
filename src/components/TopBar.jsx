@@ -54,7 +54,7 @@ const TopBar = () => {
               <a href="/">
                 
                 <img src={imageLogo} alt="Cool-Feet" />
-                <h3>Cool Feet Org.</h3>
+                <h3>Cool Feet Orgs</h3>
                 {/* {imageLogo} */}
                 {/* <a data-toggle="collapse" data-target="#menu" href="#menu">
                   <i class="fas d-block d-lg-none  small-menu fa-bars"></i>
