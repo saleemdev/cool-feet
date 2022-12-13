@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import OurWork from "./pages/OurWork";
 import TopBar from "./components/TopBar";
 import Footer from "./components/Footer";
+import Index from "./pages/Index";
 
 function App() {
   return (
