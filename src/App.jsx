@@ -27,7 +27,7 @@ function App() {
   return (
     <>
     {allRecords===null && <div class="lds-ripple"><div></div><div></div></div>}
-      <TopBar details ={{...allRecords}}/>
+      <TopBar details ={{...allRecords}} className="header" id="myHeader"/>
       <Router>
         <Routes>
           <Route path="/" exact element={<Home />} />
